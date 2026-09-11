@@ -29,7 +29,7 @@ _load_env()
 import server as caeli  # noqa: E402
 
 HOST = os.environ.get("HOST", "0.0.0.0")
-PORT = int(os.environ.get("PORT", "8080"))
+PORT = int(os.environ.get("PORT", "10000"))
 PUBLIC_BASE = (os.environ.get("CAELI_PUBLIC_URL") or "").rstrip("/")
 
 
