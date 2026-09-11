@@ -34,8 +34,6 @@ PUBLIC_BASE = (os.environ.get("CAELI_PUBLIC_URL") or "").rstrip("/")
 
 
 class Handler(caeli.Handler):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, directory=str(PREVIEW), **kwargs)
 
     def do_GET(self):
         path = self.path.split("?", 1)[0]
